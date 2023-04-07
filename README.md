@@ -57,27 +57,7 @@ test_data_accuracy = accuracy_score(Y_test, X_test_prediction)
 print('Accuracy on test data = ', test_data_accuracy)
 #Output= (Accuracy on test data =  0.9298245614035088)
 
-#Building a Predictive System
 
-input_data = (#select any random row from dataset)
-
-#Change the input data to a numpy array
-input_data_as_numpy_array = npy.asarray(input_data)
-
-#Reshape the numpy array as we are predicting for one datapoint
-input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
-
-prediction = model.predict(input_data_reshaped)
-print(prediction)
-
-if (prediction[0] == 0):
-  print('The Breast cancer is Malignant')
-
-else:
-  print('The Breast Cancer is Benign')
-
-#Output = ([1]
-The Breast Cancer is Benign)
 
 
 
